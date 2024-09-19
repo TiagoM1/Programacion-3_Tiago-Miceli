@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctico de JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Práctico JavaScript</h1>
+  </header>
+
+  <!-- Sección 1: Modificación de Párrafos -->
+  <section class="section-text">
+    <h2>Cambiar el color de los párrafos</h2>
+    <p>Párrafo uno en la página.</p>
+    <p>Párrafo dos en la página.</p>
+    <p>Párrafo tres en la página.</p>
+    <button onclick="cambiarColor()">Cambiar a verde</button>
+  </section>
+
+  <!-- Sección 2: Formulario y alerta -->
+  <section class="section-form">
+    <h2>Formulario con alerta</h2>
+    <form onsubmit="mostrarAlerta(event)">
+      <label for="inputText">Texto:</label>
+      <input type="text" id="inputText" name="inputText">
+      <button type="submit">Mostrar Alerta</button>
+    </form>
+  </section>
+
+  <!-- Sección 3: Lista con elementos -->
+  <section class="section-list">
+    <h2>Lista de Elementos</h2>
+    <ul id="elementList">
+      <li>Ítem A</li>
+      <li>Ítem B</li>
+      <li>Ítem C</li>
+      <li>Ítem D</li>
+    </ul>
+  </section>
+
+  <!-- Sección 4: Campo de texto y botones -->
+  <section class="section-buttons">
+    <h2>Campo y Botones</h2>
+    <input type="text" id="textInput" placeholder="Escribe algo aquí">
+    <button onclick="desactivarCampo()">Desactivar</button>
+    <button onclick="activarCampo()">Activar</button>
+  </section>
+
+  <!-- Sección 5: Almacenamiento Local -->
+  <section class="section-storage">
+    <form id="emailForm" onsubmit="guardarEmail(event)">
+      <label for="email">Correo:</label>
+      <input type="email" id="email" required>
+      <button type="submit">Guardar Correo</button>
+    </form>
+    <div id="mostrarEmail"></div>
+    <button id="borrarEmail" onclick="borrarEmail()" style="display: none;">Eliminar Correo</button>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
