@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integrador TiagoMiceli</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Fuentes -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container__principalHeader">
+        <div class="container__containtHeader">
+          <div class="header__search">
+            <input
+              type="text"
+              placeholder="Ingrese un elemento"
+              class="input__header"
+              id="inputHeaderSearch"
+            />
+            <button class="button__search__header" id="buttonSearch">
+              Buscar<span class="material-symbols-outlined"> search </span>
+            </button>
+          </div>
+          <div>
+            <button class="button__add__header" id="buttonAddElement">
+              Agregar Elemento
+              <span class="material-symbols-outlined"> add_to_photos </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container__view__main">
+        <aside class="list__aside__main">
+          <h2>
+            Categorias
+            <span class="material-symbols-outlined"> filter_list </span>
+          </h2>
+          <ul id="listFilter" />
+        </aside>
+        <div class="store__main" id="storeContainer"></div>
+      </div>
+      <div class="popUp__container__principal" id="modalPopUp">
+        <div class="popUp__container">
+          <div class="containtertitle__popup">
+            <h1>Agregar o modificar un producto</h1>
+          </div>
+          <div class="containterInputs__popup">
+            <input placeholder="Ingresa un nombre" id="namePopUp" type="text" />
+            <input placeholder="Precio" id="precioPopUp" value="0" type="number" />
+            <input type="text" placeholder="Ingrese una image" id="imgPopUp" />
+            <select id="categoriaPopUp">
+              <option>Selecione una categoria</option>
+              <option>Gaseosa</option>
+              <option>Hamburgesas</option>
+              <option>Papas</option>
+            </select>
+          </div>
+          <div class="containterButtons__popup">
+            <button class="buttonPopUp accept" id="acceptPopUp">Aceptar</button>
+            <button class="buttonPopUp cancel" id="cancelPopUp">cancelar</button>
+            <button class="buttonPopUp delete" id="deletePopUp">Eliminar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
